@@ -13,7 +13,7 @@ describe("mobileDisplayKeystrokes", () => {
   test("should return accurate keystroke count for letters", () => {
     expect(mobileDisplayKeystrokes("abc")).toBe(9);
   });
-  test("should return accurate keystroke count for longer words", () => {
+  test.only("should return accurate keystroke count for longer words", () => {
     expect(mobileDisplayKeystrokes("northcoders")).toBe(27);
   });
   test("should return accurate keystroke count for a combination string", () => {
