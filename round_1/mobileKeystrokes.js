@@ -1,5 +1,4 @@
 // const mobileDisplayKeystrokes = (word) => {
-//   // work your magic here...
 //   const oneStroke = [
 //     "0",
 //     "1",
@@ -35,7 +34,6 @@
 // };
 
 const mobileDisplayKeystrokes = (word) => {
-  // work your magic here...
   const refObj = {
     0: 1,
     1: 1,
