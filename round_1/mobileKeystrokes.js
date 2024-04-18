@@ -1,6 +1,5 @@
 const mobileDisplayKeystrokes = (word) => {
   // work your magic here...
-  console.time();
   const oneStroke = [
     "0",
     "1",
@@ -33,7 +32,6 @@ const mobileDisplayKeystrokes = (word) => {
       count += 5;
     }
   }
-  console.timeEnd();
   return count;
 };
 
