@@ -1,5 +1,6 @@
 const mobileDisplayKeystrokes = (word) => {
   // work your magic here...
+  console.time();
   const oneStroke = [
     "0",
     "1",
@@ -21,22 +22,18 @@ const mobileDisplayKeystrokes = (word) => {
   let count = 0;
   for (let i of word) {
     if (oneStroke.includes(i)) {
-      console.log(i, "<<<1");
       count++;
     } else if (twoStrokes.includes(i)) {
-      console.log(i, "<<<2");
       count += 2;
     } else if (threeStrokes.includes(i)) {
-      console.log(i, "<<<3");
       count += 3;
     } else if (fourStrokes.includes(i)) {
-      console.log(i, "<<<4");
       count += 4;
     } else if (fiveStrokes.includes(i)) {
-      console.log(i, "<<<5");
       count += 5;
     }
   }
+  console.timeEnd();
   return count;
 };
 
